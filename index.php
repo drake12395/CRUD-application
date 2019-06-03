@@ -8,22 +8,22 @@
  
 <body>
     <div class="container">
-            <div class="row">
-                <h3>Customer File</h3>
-            </div>
-            <div class="row">
-                <p>
-                    <a href="register.php" class="btn btn-success">Create</a>
-                </p>
-                <table class="table table-striped table-bordered">
+        <div class="row">
+            <h3>Customer File</h3>
+         </div>
+          <div class="row">
+              <p>
+              <a href="register.php" class="btn btn-success">Create</a>
+              </p>
+                  <table class="table table-striped table-bordered">
                   <thead>
-                    <tr>
+                  <tr>
                       <th>Name</th>
                       <th>Email Address</th>
                       <th>Mobile Number</th>
-					  <th>Password</th>
-					  <th>Action</th>
-                    </tr>
+		      <th>Password</th>
+		      <th>Action</th>
+                  </tr>
                   </thead>
                   <tbody>
                   <?php
@@ -35,8 +35,8 @@
                             echo '<td>'. $row['name'] . '</td>';
                             echo '<td>'. $row['email'] . '</td>';
                             echo '<td>'. $row['mobile'] . '</td>';
-							echo '<td>'. $row['pword'] . '</td>';
-							echo '<td width=250>';
+			    echo '<td>'. $row['pword'] . '</td>';
+			    echo '<td width=250>';
                             echo '<a class="btn" href="read.php?id='.$row['id'].'">Read</a>';
                             echo ' ';
                             echo '<a class="btn btn-success" href="update.php?id='.$row['id'].'">Update</a>';
